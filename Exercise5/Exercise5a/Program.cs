@@ -33,22 +33,44 @@ namespace Exercise5a
             }
 
         }
+        public static int Char2Code(char c)
+        {
+            return (int)c;
+        }
+        public static bool isUpper(char a)
+        {
+            for (int i = 65; i <= 90; i++)
+            {
+                Console.Write((char)i);
+                if (a.Equals((char)i))
+                    return true;
+            }
+            return false;
+        }
+        public static bool isLower(char a)
+        {
+            for (int i = 65; i <= 90; i++)
+            {
+                Console.Write((char)i);
+                if (a.Equals((char)i))
+                    return false;
+            }
+            return true;
+        }
+        public static char toUpper(char a)
+        {
+            int c = Char2Code(a);
+            c = c - 32;
+            a = (char)c;
+            return a;
 
-        public static bool IsUper(char c)
-        {
-            return false;
         }
-        public static bool IsLower(char c)
+        public static char toLower(char a)
         {
-            return false;
-        }
-        public static char ToUper(char c)
-        {
-            return c;
-        }
-        public static char ToLower(char c)
-        {
-            return c;
+            int c = Char2Code(a);
+            c = c + 32;
+            a = (char)c;
+            return a;
         }
     }
 }
