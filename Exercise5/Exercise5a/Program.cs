@@ -10,7 +10,10 @@ namespace Exercise5a
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine(isUpper('a'));            
+            Console.WriteLine(isLower('a'));
+            Console.WriteLine(toLower('A'));
+            Console.WriteLine(toUpper('a'));
         }
         public static void PrintABCD()
         {
@@ -37,12 +40,11 @@ namespace Exercise5a
         {
             return (int)c;
         }
-        public static bool isUpper(char a)
+        public static bool isUpper(char e)
         {
             for (int i = 65; i <= 90; i++)
-            {
-                Console.Write((char)i);
-                if (a.Equals((char)i))
+            {               
+                if (e.Equals((char)i))
                     return true;
             }
             return false;
@@ -50,8 +52,7 @@ namespace Exercise5a
         public static bool isLower(char a)
         {
             for (int i = 65; i <= 90; i++)
-            {
-                Console.Write((char)i);
+            {              
                 if (a.Equals((char)i))
                     return false;
             }
