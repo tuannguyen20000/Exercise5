@@ -38,7 +38,7 @@ namespace Exercise5a
         }
         public static int Char2Code(char c)
         {
-            return (int)c;
+            return c;
         }
         public static bool isUpper(char e)
         {
